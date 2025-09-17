@@ -77,16 +77,8 @@ Dentro do container, rode:
 
 ```bash
 python manage.py migrate
-python manage.py createsuperuser
+python manage.py createsuperuser #opcional
 python manage.py import_players /app/data/players_21.csv
-
-```
-Fora do container, rode:
-```bash
-mkdir -p media
-```
-Novamente dentro do container, rode: 
-```bash
 python manage.py download_all_images
 ```
 ---
@@ -123,7 +115,7 @@ docker-compose down
 ## 📌 Observações
 
 * Algumas imagens de jogadores podem não existir na API do Sofifa.
-* Para jogadores famosos (Messi, CR7, Mbappé), as imagens foram armazenadas localmente em `/media/players_images`.
+* As imagens foram armazenadas no container em `/media/players_images`.
 
 ---
 

@@ -77,7 +77,7 @@ Dentro do container, rode:
 
 ```bash
 python manage.py migrate
-python manage.py createsuperuser #opcional
+python manage.py createsuperuser
 python manage.py import_players /app/data/players_21.csv
 python manage.py download_all_images
 ```
